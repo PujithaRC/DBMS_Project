@@ -42,7 +42,7 @@
         <?php 
             //Select customer record from database
             $orh_id = $_GET["orh_id"];
-            $query = "SELECT orh.orh_refcode,orh.orh_ordertime,c.c_firstname,c.c_lastname,orh.orh_orderstatus,orh.orh_pickuptime,p.p_amount,s.s_name
+            $query = "SELECT orh.orh_refcode,orh.orh_ordertime,c.c_firstname,c.c_lastname,orh.orh_orderstatus,orh.orh_pickuptime,s.s_name
                 FROM order_header orh INNER JOIN customer c ON orh.c_id = c.c_id 
                 INNER JOIN shop s ON orh.s_id = s.s_id WHERE orh.orh_id = {$orh_id};";
             $result = $mysqli ->query($query);
