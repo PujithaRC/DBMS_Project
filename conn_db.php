@@ -7,5 +7,5 @@
     }
 
     define('SITE_ROOT',realpath(dirname(__FILE__)));
-    date_default_timezone_set('Asia/Calcutta');
-?>
+    date_default_timezone_set('Asia/Kolkata');
+?> 
