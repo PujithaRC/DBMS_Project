@@ -361,17 +361,17 @@
                             </div>
                         </div>
                         <div class="col">
-                           <?php /*if($no_order)*/{ ?>
+                           <?php if($no_order){ ?>
                             
                                 <?php
-                                   /* if(!$min_cost){
+                                    if(!$min_cost){
                                         echo "Your order is less than minimum amount.";
                                     }else{
                                         echo "Cannot proceed with payment";
-                                    }*/
+                                    }
                                 ?>
                             </button>
-                            <?php /*}else{*/ ?>
+                            <?php }else{ ?>
                             <script type="text/javascript" 
                                 data-key="pkey_test_5pj8zasgcvaasrujrrs"
                                 
