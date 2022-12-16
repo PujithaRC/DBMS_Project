@@ -14,13 +14,14 @@
             if(isset($_POST["s_preorderstatus"])){$s_preorderstatus = 1;}else{$s_preorderstatus = 0;}
             $s_name = $_POST["s_name"];
             $s_username = $_POST["s_username"];
+            $s_pwd=$_POST["s_pwd"];
             $s_location = $_POST["s_location"];
             $s_email = $_POST["s_email"];
             $s_phoneno = $_POST["s_phoneno"];
             $s_openhour = $_POST["s_openhour"];
             $s_closehour = $_POST["s_closehour"];
-            $insert_query = "INSERT INTO shop (s_username,s_name,s_location,s_openhour,s_closehour,s_email,s_phoneno,s_status,s_preorderstatus) 
-            VALUES ('{$s_username}','{$s_name}','{$s_location}','{$s_openhour}','{$s_closehour}','{$s_email}','{$s_phoneno}',{$s_status},{$s_preorderstatus});";
+            $insert_query = "INSERT INTO shop (s_username,s_pwd,s_name,s_location,s_openhour,s_closehour,s_email,s_phoneno,s_status,s_preorderstatus) 
+            VALUES ('{$s_username}','{$s_pwd}','{$s_name}','{$s_location}','{$s_openhour}','{$s_closehour}','{$s_email}','{$s_phoneno}',{$s_status},{$s_preorderstatus});";
             $insert_result = $mysqli -> query($insert_query);
             if(!empty($_FILES["s_pic"]["name"]) && $insert_result){
                 //Image upload
@@ -76,6 +77,11 @@
             <div class="form-floating mb-2">
                 <input type="text" class="form-control" id="shopname" placeholder="Shop Name" name="s_name" required>
                 <label for="shopname">Shop Name</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="pwd" placeholder="Password" name="s_pwd" minlength="8"
+                    maxlength="45" required>
+                <label for="pwd">Password</label>
             </div>
             <div class="form-floating mb-2">
                 <input type="email" class="form-control" id="email" placeholder="E-mail" name="s_email" required>
