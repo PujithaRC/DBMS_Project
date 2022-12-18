@@ -6,8 +6,8 @@
         session_start(); include("conn_db.php"); include('head.php');
         if(isset($_POST["rst_confirm"])){
             $cust_id = $_POST['cust_id'];
-            $newpwd = $_POST['new_pwd'];
-            $newcfpwd = $_POST['new_cfpwd'];
+            $newpwd = md5($_POST['new_pwd']);
+            $newcfpwd = md5($_POST['new_cfpwd']);
             if($newpwd==$newcfpwd){
                 $query = "UPDATE customer SET c_pwd = '$newpwd' WHERE c_id=$cust_id";
                 $result = $mysqli -> query($query);

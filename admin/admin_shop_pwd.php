@@ -11,8 +11,8 @@
         }
         if(isset($_POST["rst_confirm"])){
             $s_id = $_POST["s_id"];
-            $newpwd = $_POST["new_pwd"];
-            $newcfpwd = $_POST["new_cfpwd"];
+            $newpwd = md5($_POST["new_pwd"]);
+            $newcfpwd = md5($_POST["new_cfpwd"]);
             if($newpwd != $newcfpwd){
                 ?>
                     <script>

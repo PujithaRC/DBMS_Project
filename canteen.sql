@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2022 at 12:44 PM
+-- Generation Time: Dec 18, 2022 at 06:48 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -99,8 +99,8 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`c_id`, `c_username`, `c_pwd`, `c_firstname`, `c_lastname`, `c_email`, `c_gender`, `c_type`) VALUES
-(1, 'pujitha', 'pujitharc', 'pujitha', 'rc', 'pujitharoopa@gmail.com', 'F', 'STD'),
-(2, 'admin', 'admin123', 'canteen', 'admin', 'admin@gmail.com', 'F', 'ADM');
+(1, 'pujitha', 'eedc3eee1077124a31477d7dd474b3a0', 'pujitha', 'rc', 'pujitharoopa@gmail.com', 'F', 'STD'),
+(2, 'admin', '0192023a7bbd73250516f069df18b500', 'canteen', 'admin', 'admin@gmail.com', 'F', 'ADM');
 
 -- --------------------------------------------------------
 
@@ -223,9 +223,9 @@ CREATE TABLE `shop` (
 --
 
 INSERT INTO `shop` (`s_id`, `s_username`, `s_pwd`, `s_name`, `s_location`, `s_openhour`, `s_closehour`, `s_status`, `s_preorderstatus`, `s_email`, `s_phoneno`, `s_pic`) VALUES
-(1, 'Canteen1', 'canteen1', 'GJB CANTEEN', 'GJB', '10:00:00', '18:00:00', 1, 1, 'canteen1@gmail.com', '9999999999', 'canteen1.jpg'),
-(2, 'Canteen2', 'canteen2', 'NRN CANTEEN', 'NRN', '10:00:00', '18:00:00', 1, 1, 'canteen2@gmail.com', '8888888888', 'canteen2.jpg'),
-(3, 'Canteen3', 'canteen3', 'Srikantu Canteen', 'Admin Block', '10:00:00', '18:00:00', 1, 1, 'canteen3@gmail.com', '7777777777', 'canteen3.jpg');
+(1, 'Canteen1', '9c740c9ae927a5793fe29170264736e4', 'GJB CANTEEN', 'GJB', '10:00:00', '18:00:00', 1, 1, 'canteen1@gmail.com', '9999999999', 'canteen1.jpg'),
+(2, 'Canteen2', 'eafaac93a6fb9405a96c002c246357ee', 'NRN CANTEEN', 'NRN', '10:00:00', '18:00:00', 1, 1, 'canteen2@gmail.com', '8888888888', 'canteen2.jpg'),
+(3, 'Canteen3', '74074d1bf9ba65f12eb3cf1010d3b644', 'Srikantu Canteen', 'Admin Block', '10:00:00', '18:00:00', 1, 1, 'canteen3@gmail.com', '7777777777', 'canteen3.jpg');
 
 --
 -- Indexes for dumped tables
@@ -291,7 +291,7 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `food`
@@ -315,7 +315,7 @@ ALTER TABLE `order_header`
 -- AUTO_INCREMENT for table `shop`
 --
 ALTER TABLE `shop`
-  MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

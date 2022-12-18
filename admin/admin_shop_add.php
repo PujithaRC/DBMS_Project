@@ -14,7 +14,7 @@
             if(isset($_POST["s_preorderstatus"])){$s_preorderstatus = 1;}else{$s_preorderstatus = 0;}
             $s_name = $_POST["s_name"];
             $s_username = $_POST["s_username"];
-            $s_pwd=$_POST["s_pwd"];
+            $s_pwd=md5($_POST["s_pwd"]);
             $s_location = $_POST["s_location"];
             $s_email = $_POST["s_email"];
             $s_phoneno = $_POST["s_phoneno"];
