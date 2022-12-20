@@ -19,7 +19,7 @@
     <link href="../css/menu.css" rel="stylesheet">
     <link href="../css/login.css" rel="stylesheet">
     <script type="text/javascript" src="../js/revenue_date_selection.js"></script>
-    <title>Shop Revenue Report | EATERIO</title>
+    <title>Shop Revenue Report | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100 bg-white">

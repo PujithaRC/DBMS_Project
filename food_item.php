@@ -26,7 +26,7 @@
             return window.confirm("Do you want to change the shop?\nDon't worry we will do it for you automatically.");
         }
     </script>
-    <title>Food Item | EATERIO</title>
+    <title>Food Item | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100">

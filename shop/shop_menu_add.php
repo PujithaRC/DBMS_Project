@@ -43,7 +43,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/login.css" rel="stylesheet">
-    <title>Shop Add Menu | EATERIO</title>
+    <title>Shop Add Menu | EATARIA</title>
 </head>
 
 

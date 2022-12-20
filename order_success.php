@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/login.css" rel="stylesheet">
 
-    <title>Successfully Order | EATERIO</title>
+    <title>Successfully Order | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100">

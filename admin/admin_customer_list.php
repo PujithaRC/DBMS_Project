@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../img/ICON_F.png" rel="icon">
     <link href="../css/main.css" rel="stylesheet">
-    <title>Customer List | EATERIO</title>
+    <title>Customer List | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100">

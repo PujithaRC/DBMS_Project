@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
-    <title>My Cart | EATERIO</title>
+    <title>My Cart | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -375,7 +375,7 @@
                             <script type="text/javascript" 
                                 data-key="pkey_test_5pj8zasgcvaasrujrrs"
                                 
-                                data-frame-label="EATERIO | NIE"
+                                data-frame-label="EATARIA | NIE"
                                 data-button-label="Proceed with payment"
                                 data-submit-label="Submit"
                                 data-locale="en"

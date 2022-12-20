@@ -35,7 +35,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <script type="text/javascript" src="js/input_number.js"></script>
-    <title>Food Item | EATERIO</title>
+    <title>Food Item | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100">

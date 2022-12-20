@@ -12,7 +12,7 @@
             height: 100%;
         }
     </style>
-    <title>Shop List | EATERIO</title>
+    <title>Shop List | EATARIA</title>
 </head>
 
 <body class="d-flex flex-column h-100">
