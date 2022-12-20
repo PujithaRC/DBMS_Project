@@ -77,7 +77,7 @@
                             else{echo "'img/{$shop_row['s_pic']}'";}
                         ?> 
                     ) center; height: 200px;
-                    background-size: cover; background-repeat: no-repeat;
+                    background-size: 40% 100%; background-repeat: no-repeat;
                     background-position: center;">
             </div>
             <h1 class="display-5 strong"><?php echo $shop_row["s_name"];?></h1>
