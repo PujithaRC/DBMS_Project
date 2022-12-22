@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2022 at 06:48 AM
+-- Generation Time: Dec 22, 2022 at 05:54 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -100,7 +100,9 @@ CREATE TABLE `customer` (
 
 INSERT INTO `customer` (`c_id`, `c_username`, `c_pwd`, `c_firstname`, `c_lastname`, `c_email`, `c_gender`, `c_type`) VALUES
 (1, 'pujitha', 'eedc3eee1077124a31477d7dd474b3a0', 'pujitha', 'rc', 'pujitharoopa@gmail.com', 'F', 'STD'),
-(2, 'admin', '0192023a7bbd73250516f069df18b500', 'canteen', 'admin', 'admin@gmail.com', 'F', 'ADM');
+(2, 'admin', '0192023a7bbd73250516f069df18b500', 'canteen', 'admin', 'admin@gmail.com', 'F', 'ADM'),
+(6, 'sadana', '2e998a1df270ed90b6ff22afc4c4cbe3', 'sadana', 'h j', 'sadana@gmail.com', 'F', 'STF'),
+(7, 'sapna', '0f3d1ff7fe53fa572e455d4275e02f4b', 'sapna', 's', 'sapna@gmail.com', 'F', 'OTH');
 
 -- --------------------------------------------------------
 
@@ -160,13 +162,7 @@ CREATE TABLE `order_detail` (
 --
 
 INSERT INTO `order_detail` (`ord_id`, `orh_id`, `f_id`, `ord_amount`, `ord_buyprice`, `ord_note`) VALUES
-(1, 1, 2, 1, '30.00', ''),
-(2, 1, 4, 1, '10.00', ''),
-(3, 2, 2, 1, '30.00', ''),
-(4, 3, 8, 1, '40.00', ''),
-(5, 4, 12, 1, '30.00', ''),
-(6, 5, 2, 1, '30.00', ''),
-(7, 6, 9, 1, '30.00', '');
+(11, 10, 8, 1, '40.00', '');
 
 -- --------------------------------------------------------
 
@@ -190,12 +186,7 @@ CREATE TABLE `order_header` (
 --
 
 INSERT INTO `order_header` (`orh_id`, `orh_refcode`, `c_id`, `s_id`, `orh_ordertime`, `orh_pickuptime`, `orh_orderstatus`, `orh_finishedtime`) VALUES
-(1, '202212100000001', 1, 1, '2022-12-10 13:12:40', '2022-12-11 10:00:00', 'FNSH', '2022-12-10 20:15:25'),
-(2, '202212100000002', 1, 1, '2022-12-10 15:40:15', '2022-12-11 10:00:00', 'FNSH', '2022-12-10 22:40:53'),
-(3, '202212140000003', 1, 2, '2022-12-14 10:01:43', '2022-12-15 10:00:00', 'FNSH', '2022-12-14 15:49:52'),
-(4, '202212160000004', 1, 3, '2022-12-16 04:52:03', '2022-12-16 11:50:00', 'FNSH', '2022-12-16 10:23:03'),
-(5, '202212160000005', 1, 1, '2022-12-16 05:05:08', '2022-12-16 12:05:00', 'FNSH', '2022-12-16 16:40:34'),
-(6, '202212160000006', 1, 2, '2022-12-16 05:05:48', '2022-12-16 12:05:00', 'ACPT', NULL);
+(10, '202212220000010', 1, 2, '2022-12-22 04:39:41', '2022-12-22 10:15:00', 'FNSH', '2022-12-22 10:10:45');
 
 -- --------------------------------------------------------
 
@@ -223,7 +214,7 @@ CREATE TABLE `shop` (
 --
 
 INSERT INTO `shop` (`s_id`, `s_username`, `s_pwd`, `s_name`, `s_location`, `s_openhour`, `s_closehour`, `s_status`, `s_preorderstatus`, `s_email`, `s_phoneno`, `s_pic`) VALUES
-(1, 'Canteen1', '9c740c9ae927a5793fe29170264736e4', 'GJB CANTEEN', 'GJB', '10:00:00', '18:00:00', 1, 1, 'canteen1@gmail.com', '9999999999', 'canteen1.jpg'),
+(1, 'Canteen1', '9c740c9ae927a5793fe29170264736e4', 'GJB CANTEEN', 'GJB', '10:00:00', '17:00:00', 1, 1, 'canteen1@gmail.com', '9999999999', 'canteen1.jpg'),
 (2, 'Canteen2', 'eafaac93a6fb9405a96c002c246357ee', 'NRN CANTEEN', 'NRN', '10:00:00', '18:00:00', 1, 1, 'canteen2@gmail.com', '8888888888', 'canteen2.jpg'),
 (3, 'Canteen3', '74074d1bf9ba65f12eb3cf1010d3b644', 'Srikantu Canteen', 'Admin Block', '10:00:00', '18:00:00', 1, 1, 'canteen3@gmail.com', '7777777777', 'canteen3.jpg');
 
@@ -285,13 +276,13 @@ ALTER TABLE `shop`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `ct_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `ct_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `food`
@@ -303,13 +294,13 @@ ALTER TABLE `food`
 -- AUTO_INCREMENT for table `order_detail`
 --
 ALTER TABLE `order_detail`
-  MODIFY `ord_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ord_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `order_header`
 --
 ALTER TABLE `order_header`
-  MODIFY `orh_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `orh_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `shop`
