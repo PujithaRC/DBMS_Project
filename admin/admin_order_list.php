@@ -186,7 +186,7 @@
                         <th scope="col">Order Status</th>
                         <th scope="col">Order Date</th>
                         <th scope="col">Customer Name</th>
-                        <th scope="col">Order Cost</th>
+                        
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -212,7 +212,7 @@
                         echo $order_time;
                         ?></td>
                         <td><?php echo $row["c_firstname"]." ".$row["c_lastname"];?></td>
-                       <!-- <td><?php echo $row["p_amount"]." Rs";?></td>-->
+                       
                         <td>
                             <a href="admin_order_detail.php?orh_id=<?php echo $row["orh_id"]?>" class="btn btn-sm btn-primary">View</a>
                             <a href="admin_order_update.php?orh_id=<?php echo $row["orh_id"]?>" class="btn btn-sm btn-outline-success">Update Status</a>

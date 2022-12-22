@@ -70,7 +70,7 @@
             <?php }
                 } ?>
         <div class="mb-3 text-wrap" id="shop-header">
-            <div class="rounded-25 mb-4" id="shop-img" style="
+            <div class=" mb-4" id="shop-img" style="
                     background: url(
                         <?php
                             if(is_null($shop_row["s_pic"])){echo "'img/default.png'";}
@@ -78,7 +78,7 @@
                         ?> 
                     ) center; height: 200px;
                     background-size: 40% 100%; background-repeat: no-repeat;
-                    background-position: center;">
+                    background-position: left;">
             </div>
             <h1 class="display-5 strong"><?php echo $shop_row["s_name"];?></h1>
             <ul class="list-unstyled">
