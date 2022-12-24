@@ -22,32 +22,7 @@
     if(($shop_today==1 && $pkt_arr[0]==$now_date && $pkt_arr[1]>=$shop_open && $pkt_arr[1]<=$shop_close) ||
     ($shop_preorder==1 && $pkt_arr[0]==$tomorrow_date && $pkt_arr[1]>=$shop_open && $pkt_arr[1]<=$shop_close) ){
         //Order accepted.
-        //Omise Payment
-      /*  require_once dirname(__FILE__).'/omise-php/lib/omise.php';
-        define('OMISE_API_VERSION', '2019-05-29');
-        define('OMISE_PUBLIC_KEY', 'pkey_test_5pj8zasgcvaasrujrrs');
-        define('OMISE_SECRET_KEY', 'skey_test_5pj8zasgc2vv1yma57q');
-        $charge = OmiseCharge::create(array(
-            'amount' => $payamount,
-            'currency' => 'Rs',
-            'card' => $_POST["omiseToken"]
-        ));
-        $pay_status = $charge['status'];
-        if($pay_status=="successful"){
-            $card_finance = $charge['card']['financing'];
-            $card_brand = $charge['card']['brand'];
-            $card_lastdigit = $charge['card']['last_digits'];
-            $payment_detail = ucfirst($card_brand)." [*".$card_lastdigit."]";
-            switch($card_finance){
-                case "credit": $payment_type = "CRDC"; break;
-                case "debit": $payment_type = "DBTC"; break;
-                case "prepaid": $payment_type = "PPDC"; break;
-                default: $payment_type = "UNKN";
-            }*/
-           // $amt = $charge['amount']/100;
-           // $payment_query = "INSERT INTO payment (c_id,p_type,p_amount,p_detail) VALUES ({$_SESSION['cid']},'{$payment_type}',{$amt},'{$payment_detail}');\n";
-           // $payment_result = $mysqli -> query($payment_query);
-           // $pay_id = $mysqli -> insert_id;
+        
            
             $orh_query = "INSERT INTO order_header (c_id,s_id,orh_pickuptime,orh_orderstatus) VALUES ({$_SESSION['cid']},{$shop_id},'{$pickuptime}','ACPT');\n";
             $orh_result = $mysqli -> query($orh_query);
@@ -87,16 +62,12 @@
                 header("location: order_failed.php?err={$mysqli->errno}");
             }
             exit(1);
-        }/*else{
-            $payerr_msg = $charge['failure_message'];
-            header("location: order_failed.php?pmt_err={$payerr_msg}");
-            exit(1);
-        }  */          
+        }          
     
-   /*else{
+    else{
         ?>
         <script>alert("You enter the pick-up time incorrectly.\nPlease re-enter it again."); history.back();</script>
         <?php
         exit(1);
-    }*/
+    }
 ?>

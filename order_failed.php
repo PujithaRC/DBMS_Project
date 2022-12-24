@@ -24,10 +24,7 @@
                     $error_code = $_GET["err"];
                     $err_type = 1;
                     $display_msg =  "Error Code: {$error_code}";
-                }else if(isset($_GET["pmt_err"])){
-                    $err_type = 2;
-                    $display_msg = "Message: ".ucfirst($_GET["pmt_err"]);
-                }
+                
             ?>
             <i class="mt-4 bi bi-exclamation-circle text-danger h1 display-2"></i>
             <h3 class="mt-2 mb-3 fw-normal text-bold">Unable to place your order</h3>
