@@ -194,7 +194,7 @@
                 FROM order_header orh INNER JOIN customer c ON orh.c_id = c.c_id 
                 WHERE orh.s_id = {$s_id} AND c.c_type LIKE '%{$_GET['ut']}%' AND orh_orderstatus LIKE '%{$_GET['os']}%'".$cid_clause;
             }else{
-                $query = "SELECT orh.orh_id,orh.orh_refcode,orh.orh_ordertime,c.c_firstname,c.c_lastname,orh.orh_orderstatus,p.p_amount
+                $query = "SELECT orh.orh_id,orh.orh_refcode,orh.orh_ordertime,c.c_firstname,c.c_lastname,orh.orh_orderstatus
                 FROM order_header orh INNER JOIN customer c ON orh.c_id = c.c_id  WHERE orh.s_id = {$s_id};";
             }
             $result = $mysqli -> query($query);
