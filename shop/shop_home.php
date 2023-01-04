@@ -141,8 +141,8 @@
                             <p class="card-text my-2">
                                 <span class="h6">
                                     <?php
-                                    $query = "SELECT COUNT(*) AS cnt_menu FROM food f INNER JOIN shop s ON f.s_id = s.s_id 
-                                    WHERE (s.s_status = 1 AND (CURTIME() BETWEEN s.s_openhour AND s.s_closehour) AND f.f_todayavail = 1) OR (s.s_preorderstatus = 1 AND f.f_preorderavail = 1) AND s.s_id = {$s_id};";
+                                    $query = "SELECT COUNT(f.f_id) AS cnt_menu FROM food f INNER JOIN shop s ON f.s_id = s.s_id 
+                                    WHERE ((s.s_status = 1 AND (CURTIME() BETWEEN s.s_openhour AND s.s_closehour) AND f.f_todayavail = 1) OR (s.s_preorderstatus = 1 AND f.f_preorderavail = 1)) AND s.s_id = {$s_id};";
                                     $result = $mysqli -> query($query) -> fetch_array();
                                     echo $result["cnt_menu"];
                                 ?>
