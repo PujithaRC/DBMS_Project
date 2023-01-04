@@ -136,14 +136,14 @@
             $row = $result -> fetch_array();
         ?>
         <div class="row row-cols-1 mt-4">
-            <div class="rounded-25 mb-4" id="shop-img" style="
+            <div class="col-4" id="shop-img" style="
                     background: url(
                         <?php
                             if(is_null($row["s_pic"])){echo "'../img/default.png'";}
                             else{echo "'../img/{$row['s_pic']}'";}
                         ?> 
                     ) center; height: 225px;
-                    background-size: cover; background-repeat: no-repeat;
+                    background-size: contain; background-repeat: no-repeat;
                     background-position: center;">
             </div>
             <dl class="row">
@@ -183,7 +183,7 @@
                 <dt class="col-sm-3">E-mail</dt>
                 <dd class="col-sm-9"><?php echo $row["s_email"];?></dd>
                 <dt class="col-sm-3">Phone Number</dt>
-                <dd class="col-sm-9"><?php echo "(+99) ".$row["s_phoneno"];?></dd>
+                <dd class="col-sm-9"><?php echo "(+91) ".$row["s_phoneno"];?></dd>
             </dl>
         </div>
         <!-- END CUSTOMER INFORMATION -->
