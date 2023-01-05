@@ -77,7 +77,7 @@
                             else{echo "'img/{$shop_row['s_pic']}'";}
                         ?> 
                     ) center; height: 200px;
-                    background-size: 40% 100%; background-repeat: no-repeat;
+                    background-size: contain; background-repeat: no-repeat;
                     background-position: left;">
             </div>
             <h1 class="display-5 strong"><?php echo $shop_row["s_name"];?></h1>
@@ -106,7 +106,7 @@
                         echo $open[0].":".$open[1]." - ".$close[0].":".$close[1];
                     ?>
                 </li>
-                <li class="">Telephone number: <?php echo "(+99) ".$shop_row["s_phoneno"];?></li>
+                <li class="">Telephone number: <?php echo "(+91) ".$shop_row["s_phoneno"];?></li>
             </ul>
         </div>
 
