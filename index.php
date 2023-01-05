@@ -47,7 +47,7 @@
                         <img <?php
                             if(is_null($row["s_pic"])){echo "src='img/default.png'";}
                             else{echo "src=\"img/{$row['s_pic']}\"";}
-                        ?> style="width:100%; height:175px; object-fit:cover;"
+                        ?> style="width:100%; height:175px; object-fit:fill;"
                             class="card-img-top rounded-25 img-fluid" alt="<?php echo $row["s_name"]?>">
                         <div class="card-body">
                             <h4 name="shop-name" class="card-title"><?php echo $row["s_name"]?></h4>
