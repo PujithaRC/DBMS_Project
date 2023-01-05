@@ -123,7 +123,7 @@
                                         </div>
                                         <div class="col mb-2">Pick-up time: 
                                             <?php 
-                                            $order_time = (new Datetime($og_row["orh_ordertime"])) -> format("F j, Y H:i");
+                                            $order_time = (new Datetime($og_row["orh_pickuptime"])) -> format("F j, Y H:i");
                                             echo $order_time;
                                             ?>
                                         </div>
@@ -211,7 +211,7 @@
                                         </div>
                                         <div class="col mb-2">Pick-up time: 
                                             <?php 
-                                            $order_time = (new Datetime($og_row["orh_ordertime"])) -> format("F j, Y H:i");
+                                            $order_time = (new Datetime($og_row["orh_pickuptime"])) -> format("F j, Y H:i");
                                             echo $order_time;
                                             ?>
                                         </div>
@@ -299,7 +299,7 @@
                                         </div>
                                         <div class="col mb-2">Pick-up time: 
                                             <?php 
-                                            $order_time = (new Datetime($og_row["orh_ordertime"])) -> format("F j, Y H:i");
+                                            $order_time = (new Datetime($og_row["orh_pickuptime"])) -> format("F j, Y H:i");
                                             echo $order_time;
                                             ?>
                                         </div>
