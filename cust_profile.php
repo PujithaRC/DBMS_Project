@@ -65,7 +65,7 @@
             if(isset($_GET["up_prf"])){
                 if($_GET["up_prf"]==1){
                     ?>
-                    <!-- START SUCCESSFULLY UPDATE PASSWORD -->
+                    <!-- START SUCCESSFULLY UPDATE PROFILE -->
                     <div class="row row-cols-1 notibar">
                         <div class="col mt-2 ms-2 p-2 bg-success text-white rounded text-start">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -78,9 +78,9 @@
                             <span class="me-2 float-end"><a class="text-decoration-none link-light" href="cust_profile.php">X</a></span>
                         </div>
                     </div>
-                    <!-- END SUCCESSFULLY UPDATE PASSWORD -->
+                    <!-- END SUCCESSFULLY UPDATE PROFILE -->
             <?php }else{ ?>
-                    <!-- START FAILED UPDATE PASSWORD -->
+                    <!-- START FAILED UPDATE PROFILE -->
                     <div class="row row-cols-1 notibar">
                         <div class="col mt-2 ms-2 p-2 bg-danger text-white rounded text-start">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -92,7 +92,7 @@
                             <span class="me-2 float-end"><a class="text-decoration-none link-light" href="cust_profile.php">X</a></span>
                         </div>
                     </div>
-                    <!-- END FAILED UPDATE PASSWORD -->
+                    <!-- END FAILED UPDATE PROFILE -->
             <?php }
                 }
             ?>
