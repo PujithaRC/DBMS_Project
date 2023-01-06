@@ -3,7 +3,7 @@
     include('conn_db.php');
 
     if(!isset($_SESSION["cid"])){
-        header("locatiom: cust_login.php");
+        header("location: cust_login.php");
         exit(1);
     }
 
