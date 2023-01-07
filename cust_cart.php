@@ -366,24 +366,12 @@
                                 <?php
                                     if(!$min_cost){
                                         echo "Your order is less than minimum amount.";
-                                    }else{
-                                        echo "Cannot proceed with payment";
                                     }
                                 ?>
                             </button>
-                            <?php }else{ ?>
-                            <script type="text/javascript" 
-                                data-key="pkey_test_5pj8zasgcvaasrujrrs"
-                                
-                                data-frame-label="EATARIA | NIE"
-                                data-button-label="Proceed with payment"
-                                data-submit-label="Submit"
-                                data-locale="en"
-                                data-location="no"
-                                data-amount="<?php echo $order_cost*100;?>"
-                                data-currency="Rs">
-                            </script>
                             <?php } ?>
+                            
+                            
                         </div>
                     </form>
                 </div>
