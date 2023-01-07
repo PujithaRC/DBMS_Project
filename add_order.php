@@ -3,7 +3,7 @@
     date_default_timezone_set('Asia/Calcutta');
     include('conn_db.php');
     $pickuptime = $_POST["pickuptime"];
-    $payamount = $_POST["payamount"];
+   // $payamount = $_POST["payamount"];
     //Check which shop customer selected
     //and validate the selected pick-up time
     $shop_query = "SELECT s_id,s_openhour,s_closehour,s_status,s_preorderstatus FROM shop

@@ -32,13 +32,13 @@
                 <?php 
                     switch($err_type){
                         case 1: echo "Sorry, the system has encountered with this error"; break;
-                        case 2: echo "There is a problem with your payment"; break;
+                        
                         default: echo "There is an error in our system.";
                     }
                 ?>
             <br/>
                 <code><?php echo $display_msg;?></code>
-            </p>
+            </p><?php } ?>
             <a class="btn btn-danger btn-sm w-50" href="index.php">Return to Home</a>
     </div>
 
