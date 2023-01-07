@@ -412,6 +412,5 @@
     </footer>
 </body>
 
-<!-- Apply class to omise payment button -->
 
 </html>
